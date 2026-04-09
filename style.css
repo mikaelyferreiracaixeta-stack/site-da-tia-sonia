@@ -20,6 +20,7 @@ nav{
     margin: auto;
     
 }
+
 ul{
     
     display: flex;
@@ -85,4 +86,49 @@ a:hover{
 .sobre{
     color: #3B929C;
     width: 500px;
+}
+
+.sobre_foto{
+width: 500px;
+}
+.sobre_titulo{
+margin-top: 30px;
+font-size: 50px;
+}
+.sobre_texto{
+    margin-top: 30px;
+    font-size: 30px;
+} 
+.area-busca{
+    width: 1400px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin: 20px  auto;
+}
+.catalogo-titulo{
+    font-size: 50px;
+    color: #3B929C;
+    margin-bottom: 50px;
+}
+.busca{
+    display: flex;
+    width: 764px;
+    height: 40px;
+    border: 3px  solid #3B929C;
+    border-radius: 20px;
+    padding: 5px;
+}
+            
+.busca-campo{
+    flex:1;
+    border: none;
+    outline: none;
+    font-size: 25px;
+}
+.busca-botao{
+font-size: 30px;
+border: none;
+background:none;
+color: #3B929C;
 }
