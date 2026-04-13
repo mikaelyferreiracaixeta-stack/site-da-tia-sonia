@@ -1,134 +1,182 @@
-@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap'); 
-
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+:root{
+       --verde-principal:#3B929C;
+       --branco-secundario:#FFFFFF;
+       --rosa-salmao:#d88;
+}
 *{
-       margin: 0;
-       padding: 0;
-       font-family: "Google Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+    font-family: 'Josefin Sans';
+}
+#home{
+    scroll-margin-top: 110px;
+}
+#bordados{
+scroll-margin-top: 140px;
+}
 
-    }
-header{
-    background-color:#3B929C ;
+header {
+    background-color: var(--verde-principal);
     width: 100%;
     height: 110px;
+    position: fixed;
+    top: 0;
 }
+
 nav{
-    display:flex;
+    display: flex;
     justify-content: space-between;
-    align-items: center;   
+    align-items: center;
     height: 110px;
     width: 95%;
     margin: auto;
-    
 }
 
 ul{
-    
     display: flex;
-    align-items: center;
-    gap: 50px; 
-  list-style: none;
-   
+    gap: 50px;
+    list-style: none;
 }
+
 a{
     text-decoration: none;
-    color: #ffffff;
-    border: 2px solid #ffffff;
+    color: var(--branco-secundario);
+    font-size: 25px;
+    border: 2px solid var(--branco-secundario);
     padding: 10px;
-    border-radius: 0px 20px;
+    border-radius: 0 20px;
 }
+
 a:hover{
-     background-color: #ffffff;
-     color: #3B929C;
+    background-color:var(--branco-secundario);
+    color: var(--verde-principal);
 }
+a:focus{
+    background-color: var(--branco-secundario);
+    color: var(--verde-principal);
+ }
 .icones{
-    padding: 10px 50px;
+    padding: 10px 50px; 
+}
+main{
+    margin-top: 110px;
 }
 #banner{
     width: 1400px;
 }
-#banner_image{
-    width: 1400px;
+
+#banner__image{
     margin-top: 10px;
-    
-}
-#reservas{
     width: 1400px;
-     height: 144px;
-     border: 2px dashed #3B929C;
-     color: #3B929C;
-     text-align: center;
-     font-size: 24px;
-     margin-top: 10px;
 }
-.area_banner{
+
+#reservas {
+    width: 1400px;
+    height: 144px;
+    border: 2px dashed var(--verde-principal);
+    color: var(--verde-principal);
+    text-align: center;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.area-banner{
     display: flex;
     flex-direction: column;
     align-items: center;
-
-
 }
-#reservas_botao{
-    padding: 20px  60px;
-    color: #ffffff;
-    background-color: #3B929C;
-    border: 0;
+
+#reservas__botao{
+    padding: 20px 60px;
+    color: var(--branco-secundario);
+    font-size: 22px;
+    background-color: var(--verde-principal);
+    border: none;
     border-radius: 15px;
+    margin-top: 15px;
 }
-.area_sobre{
+#reservas__botao:hover{
+    background-color:  var(--rosa-salmao) ;
+    color:var(--verde-principal);
+}
+#reservas__titulo{
+    margin-top: 15px;
+
+}
+
+.area-sobre{
     display: flex;
-    width: 1400;
-    flex-direction: column;
-    align-items: center;
-    margin: 200px auto;
-    gap: 70px;
-    justify-content: space-evenly;
+    width: 1400px;
+    margin:20px auto;
+    justify-content: space-around;
 }
+
 .sobre{
-    color: #3B929C;
+    color: var(--verde-principal);
     width: 500px;
 }
 
-.sobre_foto{
-width: 500px;
+.sobre__foto{
+    width: 500px;
 }
-.sobre_titulo{
-margin-top: 30px;
-font-size: 50px;
+.sobre__titulo{
+    margin-top: 30px;
+    font-size: 50px;
 }
-.sobre_texto{
+ .sobre__texto{
     margin-top: 30px;
     font-size: 30px;
-} 
-.area-busca{
-    width: 1400px;
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   margin: 20px  auto;
-}
-.catalogo-titulo{
+ }
+
+ .area-busca{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+
+ .catalogo-titulo{
     font-size: 50px;
-    color: #3B929C;
+    color:var(--verde-principal);
     margin-bottom: 50px;
-}
-.busca{
+ }
+
+ .busca{
     display: flex;
     width: 764px;
     height: 40px;
-    border: 3px  solid #3B929C;
+    border: 3px solid var(--verde-principal);
     border-radius: 20px;
     padding: 5px;
-}
-            
-.busca-campo{
-    flex:1;
+    justify-content: center;
+ }
+ .busca__campo{
+    flex: 1 ;
     border: none;
     outline: none;
     font-size: 25px;
-}
-.busca-botao{
-font-size: 30px;
-border: none;
-background:none;
-color: #3B929C;
-}
+ }
+
+ .busca__botao{
+    font-size: 30px;
+    border: none;
+    color: var(--verde-principal);
+    background: none;
+ }
+
+ .catalogo{
+    margin:100px  auto;
+    width: 1400px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+ }
+ .bordados > a > img{
+    width: 400px;
+    border-radius: 20px;
+ }
+ .bordados{
+    text-align: center;
+ }
+ 

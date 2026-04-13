@@ -1,60 +1,99 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>site da tia sonia</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
+    <title>bordados da Tia Sônia</title>
 
+</head>
 <body>
     <header>
         <nav>
-            <img src="/imagem/logo-tia-sonia.png" alt="logo do site"controls: height="100" width="200">
-            
-        
+            <img class="logo" src="img/logo-tia-sonia.png" alt="Logo do site" width="150px">
             <ul>
-
-                <li><a class="icones" href="#"><i class="fa-regular fa-house"></i></a></li>
-                <li><a class="icones" href="#">bordados</a></li>
-                <li><a class="icones" href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
-                <li><a class="icones" href="#"><i class="fa-solid fa-user-clock"></i></a></li>
-       
-        </ul>
-         </nav>
+                <li><a class="icones" href="#home"><i class="fa-solid fa-house-chimney"></i></a></li>
+                <li><a class="icones" href="#bordados"><i class="fa-solid fa-scissors"></i></a></li>
+                <li><a class="icones" href="#car"><i class="fa-solid fa-cart-arrow-down"></i></a></li>
+                <li><a class="icones" href="#user"><i class="fa-solid fa-user-gear"></i></a></li>
+            </ul>
+        </nav>
     </header>
+
     <main>
-        <article class="area_banner">
+        <article class="area-banner"id="home">
             <section id="banner">
-                <img src="imagem/banner 2.png" alt="banner bordados da tia sônia"
-                id="banner_image">
+                <img src="img/banner.png" alt=" Banner bordados da tia sônia" id="banner__image">
             </section>
             <section id="reservas">
-                <h2 id="reservas_titulos">vagas na agenda da semana:3 disponiveis</h2>
-               <button id="reservas_botao">Reservar Vaga</button>
+                <h2 id="reservas__titulo"> Vagas na agenda da semana: 3 disponíveis</h2>
+                <button id="reservas__botao">Reservar Vaga</button>
             </section>
-        </article >
-        <article class="area_sobre">
+        </article>
+
+        <article class="area-sobre">
             <section class="sobre">
-                <h1  class="sobre_titulo">Conheça a Tia Sônia </h1>
-                <p class="sobre_texto">
-                    A tia Sônia, está super feliz em ter você por aqui. Ela borda todos os dias e ama o que faz, se você gosta de bordados como ela,ou conhece alguém que amaria receber um bordado, visite o seu catálogo e faca uma reserva. </p>
-                <img class="sobre_foto" src="imagem/tia-sonia.png" alt="mulher com cabelos grisalhos em um jardim de rosas">
+                <h1 class="sobre__titulo">Conheça a Tia Sônia</h1>
+                <p class="sobre__texto">A tia Sônia está super feliz em ter você por aqui. Ela borda todo os dias e ama o que faz, se você gosta de bordados como ela, ou conhece alguém que amaria receber um bordado, visite o seu catálogo e faça uma reserva. </p>
+            </section>
+            <section class="sobre">
+                <img class="sobre__foto" src="img/tia-sonia.png" alt="Mulher com cabelos grisalhos em um jardim de rosas.">
             </section>
         </article>
-        <article class="area-busca">
-       <h2 class="catalogo-titulo">catalogo de bordados</h2>
+
+        <article class="area-busca" id="bordados">
+            <h2 class="catalogo-titulo">Catálogo de bordados</h2>
             <section>
-            <form class="busca">
-                <input type="text"  class="busca-campo">
-                <button class="busca-botao"type="submit">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                </button>
-            </form>
+                <form class="busca">
+                    <input type="text" class="busca__campo">
+                    <button class="busca__botao" type="submit">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </form>
             </section>
         </article>
-    </main>
+        <article class="catalogo">
+            <section class="bordados">
+                <a href="#">
+                    <img src="img/bordado-01.png" alt="Bordado 01">
+                </a>
+                <h3>Bordado 01</h3>
+            </section>
+            <section class="bordados">
+                <a href="#">
+                    <img src="img/bordado-02.png" alt="Bordado 02">
+                </a>
+                <h3>Bordado 02</h3>
+            </section>
+            <section class="bordados">
+                <a href="#">
+                    <img src="img/bordado-03.png" alt="Bordado 03">
+                </a>
+                <h3>Bordado 03</h3>
+            </section>
+            <section class="bordados">
+                <a href="#">
+                    <img src="img/bordado-04.jpg" alt="Bordado 04">
+                </a>
+                <h3>Bordado 04</h3>
+            </section>
+            <section class="bordados">
+                <a href="#">
+                    <img src="img/bordado-05.jpg" alt="Bordado 05">
+                </a>
+                <h3>Bordado 05</h3>
+            </section>
+            </section>
+            <section class="bordados">
+                <a href="#">
+                    <img src="img/bordados-06.jpg" alt="Bordado 06">
+                </a>
+                <a href="#">focus</a>
+                <h3>Bordado 06</h3>
+            </section>
+        </article>
+    </main> 
+
 </body>
 </html>
