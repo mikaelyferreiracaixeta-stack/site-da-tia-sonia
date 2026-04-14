@@ -1,9 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
 :root{
-       --verde-principal:#3B929C;
-       --branco-secundario:#FFFFFF;
-       --rosa-salmao:#d88;
+       --cor-principal:#C73AEE;
+       --cor-secundario:#EEAEEC;
+       --cor-botao:#A82294;
+       --largura-pricipal:1600px;
+       
 }
+
 *{
     margin: 0;
     padding: 0;
@@ -17,7 +20,7 @@ scroll-margin-top: 140px;
 }
 
 header {
-    background-color: var(--verde-principal);
+    background-color: var(--cor-principal);
     width: 100%;
     height: 110px;
     position: fixed;
@@ -39,22 +42,22 @@ ul{
     list-style: none;
 }
 
-a{
+.icones{
     text-decoration: none;
-    color: var(--branco-secundario);
+    color: var(--cor-secundario);
     font-size: 25px;
-    border: 2px solid var(--branco-secundario);
+    border: 2px solid var(--cor-secundario);
     padding: 10px;
     border-radius: 0 20px;
 }
 
-a:hover{
-    background-color:var(--branco-secundario);
-    color: var(--verde-principal);
+.icones:hover{
+    background-color:var(--cor-secundario);
+    color: var(--cor-principal);
 }
-a:focus{
-    background-color: var(--branco-secundario);
-    color: var(--verde-principal);
+.icones:focus{
+    background-color: var(--cor-secundario);
+    color: var(--cor-principal);
  }
 .icones{
     padding: 10px 50px; 
@@ -63,19 +66,19 @@ main{
     margin-top: 110px;
 }
 #banner{
-    width: 1400px;
+    width:var(--largura-pricipal);
 }
 
 #banner__image{
     margin-top: 10px;
-    width: 1400px;
+    width: var(--largura-pricipal);
 }
 
 #reservas {
-    width: 1400px;
+    width:var(--largura-pricipal);
     height: 144px;
-    border: 2px dashed var(--verde-principal);
-    color: var(--verde-principal);
+    border: 2px dashed var(--cor-principal);
+    color: var(--cor-principal);
     text-align: center;
     font-size: 20px;
     margin-top: 10px;
@@ -89,16 +92,16 @@ main{
 
 #reservas__botao{
     padding: 20px 60px;
-    color: var(--branco-secundario);
+    color: var(--cor-secundario);
     font-size: 22px;
-    background-color: var(--verde-principal);
+    background-color: var(--cor-principal);
     border: none;
     border-radius: 15px;
     margin-top: 15px;
 }
 #reservas__botao:hover{
-    background-color:  var(--rosa-salmao) ;
-    color:var(--verde-principal);
+    background-color:  var(--cor-botao) ;
+    color:var(--cor-principal);
 }
 #reservas__titulo{
     margin-top: 15px;
@@ -107,13 +110,13 @@ main{
 
 .area-sobre{
     display: flex;
-    width: 1400px;
+    width:var(--largura-pricipal);
     margin:20px auto;
     justify-content: space-around;
 }
 
 .sobre{
-    color: var(--verde-principal);
+    color: var(--cor-principal);
     width: 500px;
 }
 
@@ -138,7 +141,7 @@ main{
 
  .catalogo-titulo{
     font-size: 50px;
-    color:var(--verde-principal);
+    color:var(--cor-principal);
     margin-bottom: 50px;
  }
 
@@ -146,7 +149,7 @@ main{
     display: flex;
     width: 764px;
     height: 40px;
-    border: 3px solid var(--verde-principal);
+    border: 3px solid var(--cor-principal);
     border-radius: 20px;
     padding: 5px;
     justify-content: center;
@@ -161,16 +164,18 @@ main{
  .busca__botao{
     font-size: 30px;
     border: none;
-    color: var(--verde-principal);
+    color: var(--cor-principal);
     background: none;
  }
 
  .catalogo{
     margin:100px  auto;
-    width: 1400px;
+    width:var(--largura-pricipal);
     display: flex;
     flex-wrap: wrap;
-    gap: 50px;
+    justify-content:space-around;
+    gap:50px;
+
  }
  .bordados > a > img{
     width: 400px;
@@ -178,5 +183,5 @@ main{
  }
  .bordados{
     text-align: center;
+    color: var(--cor-secundario);
  }
- 
