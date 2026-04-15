@@ -4,6 +4,7 @@
        --cor-secundario:#EEAEEC;
        --cor-botao:#A82294;
        --largura-pricipal:1600px;
+       --largura-celular:430px;
        
 }
 
@@ -27,7 +28,7 @@ header {
     top: 0;
 }
 
-nav{
+.area-navegacao{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -49,6 +50,7 @@ ul{
     border: 2px solid var(--cor-secundario);
     padding: 10px;
     border-radius: 0 20px;
+     padding: 10px 50px;
 }
 
 .icones:hover{
@@ -59,9 +61,7 @@ ul{
     background-color: var(--cor-secundario);
     color: var(--cor-principal);
  }
-.icones{
-    padding: 10px 50px; 
-}
+
 main{
     margin-top: 110px;
 }
@@ -103,7 +103,7 @@ main{
     background-color:  var(--cor-botao) ;
     color:var(--cor-principal);
 }
-#reservas__titulo{
+#reservas__titulo{  
     margin-top: 15px;
 
 }
@@ -123,7 +123,7 @@ main{
 .sobre__foto{
     width: 500px;
 }
-.sobre__titulo{
+.s.area-sobreobre__titulo{
     margin-top: 30px;
     font-size: 50px;
 }
@@ -185,3 +185,90 @@ main{
     text-align: center;
     color: var(--cor-secundario);
  }
+@media (max-width:430px){
+    header{
+        width: var(--largura-celular);
+        height: 90px;
+        position: fixed;
+        top: 0;
+    }
+    .area-navegacao{
+        width:var(--largura-celular) ;
+        height: 90px;
+        justify-content: center;
+      
+    }
+.logo {
+    display: none;
+}
+ul{
+    gap: 15px;
+  
+}
+.icones{
+    font-size: 20px;
+    border: none;
+    padding: 20px;
+}
+.icones:hover, .icones:focus{
+    background-color: none;
+    color: none;
+
+}
+#banner{
+width: var(--largura-celular);
+}
+#banner__image{
+    width: var(--largura-celular);
+}
+#reservas {
+    width: 390px;
+    border-width: 2px;
+    
+}
+#reservas__titulo{
+    font-style: 22px;
+}
+#reservas__botao{
+    padding: 10px   15px;
+    font-size: 18px;
+    border: 8px;
+}
+.area-sobre{
+  flex-direction: column;
+
+}
+.sobre{
+    width: var(--largura-celular);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sobre__titulo{
+    font-size: 30px;
+    text-align: center;
+}
+
+.sobre__texto{
+    font-size: 30px;
+    
+}
+.sobre__foto{
+    width: var(--largura-celular);
+    border-radius: 100px;
+    justify-content: center;
+}
+
+ .area-busca{
+    width: var(--largura-celular);
+ }
+.busca{
+    width: 350px;
+}
+.catalogo-titulo{
+    font-size: 30px;
+}
+ .catalogo{
+   width: var(--largura-celular);
+}
+}
