@@ -15,7 +15,55 @@
     gap: 20px;
 }
 
-.form-cadastro > div{
+.form-cadastro > div {
     display: flex;
     gap: 30px;
+    width: 50vw;
+}
+
+.area-formulario{
+    display: flex;
+    justify-content: center;
+    width: 60vw;
+}
+
+
+   { display: flex;
+    flex-direction: column;
+    flex: 1;
+
+}
+.ddd{
+    display: flex;
+    flex-direction: column;
+}
+
+#numero, #ddd{
+    width: 4vw;
+}
+ 
+
+input, select{
+    width: 100%;
+    padding: 7px  0;
+    margin-bottom: 8px;
+}
+
+.area-botao{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#botao-cadastrar{
+    width: 50%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+}
+
+.link-login{
+margin-top: -25px;
 }
