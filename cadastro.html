@@ -6,91 +6,107 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="cadastro.css">
     <title>cadastro</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
-    <main class="area-cadastro">
+    <header>
+        <nav class="area-navegacao">
+            <img class="logo" src="img/logo-tia-sonia.png" alt="Logo do site" width="150px">
+            <ul>
+                <li><a class="icones" href="index.html"><i class="fa-solid fa-house-chimney"></i></a></li>
+                <li><a class="icones" href="#bordados"><i class="fa-solid fa-scissors"></i></a></li>
+                <li><a class="icones" href="#"><i class="fa-solid fa-cart-arrow-down"></i></a></li>
+                <li><a class="icones" href="cadastro.html"><i class="fa-solid fa-user-gear"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="area-cadastro " id="cadastro">
         <section class="area-titulo">
             <h1>cadastra-se</h1>
-            </section>
-            <section class="area-formulario">
-                <form action="#" class="form-cadastro">
-                    <div class="area-nome formatacao">
-                        <div class="primeiro-nome">
-                            <label for="nome"> nome</label>
-                            <input type="text" id="nome" required placeholder="digite seu nome">
-                        </div>
-                        <div class="ultimo-nome">
-                            <label for="#">sobrenome</label>
-                            <input type="text" id="sobrenome" placeholder="digite seu sobrenome">
-                        </div>
+        </section>
+        <section class="area-formulario">
+            <form action="#" class="form-cadastro">
+                <div class="area-nome formatacao">
+                    <div class="primeiro-nome titulo-campo">
+                        <label for="nome"> nome</label>
+                        <input type="text" id="nome" required placeholder="digite seu nome">
                     </div>
-                    <div class="area-acesso formatacao">
-                        <div class="e-mail">
-                            <label for="e-mail"> e-mail</label>
-                            <input type="e-mail" id="e-mail" placeholder="e-mail" readonly>
-                        </div>
-                        <div class="senha">
-                            <label for="senha">senha</label>
-                            <input type="password" id="senha" placeholder="•••••••••" required>
-                        </div>
+                    <div class="ultimo-nome titulo-campo">
+                        <label for="#">sobrenome</label>
+                        <input type="text" id="sobrenome" placeholder="digite seu sobrenome">
                     </div>
-                    <div class="area-contato formataco">
-                       <div class="ddd">
+                </div>
+                <div class="area-acesso formatacao">
+                    <div class="e-mail titulo-campo">
+                        <label for="e-mail"> e-mail</label>
+                        <input type="e-mail" id="e-mail" placeholder="e-mail" readonly>
+                    </div>
+                    <div class="senha titulo-campo">
+                        <label for="senha">senha</label>
+                        <input type="password" id="senha" placeholder="•••••••••" required>
+                    </div>
+                </div>
+                <div class="area-contato formataco">
+                    <div class="ddd titulo-campo">
                         <label for="ddd">ddd</label>
                         <input type="number" id="ddd">
-                       </div>
-                        <div class="telefone">
-                            <label for="telefone">telefone</label>
-                            <input type="text" id="telefone" placeholder="digite seu telefone" required>
+                    </div>
+                    <div class="telefone titulo-campo">
+                        <label for="telefone">telefone</label>
+                        <input type="text" id="telefone" placeholder="digite seu telefone" required>
+                    </div>
+                </div>
+                <div class="area-endereco formatacao">
+                    <div class="endereco-numero">
+                        <div class="endereco titulo-campo">
+                            <label for="endereco">endereco</label>
+                            <input type="endereco" id="endereco" placeholder="digite seu endereco">
+                        </div>
+                        <div class="numero titulo-campo">
+                            <label for="numero">numero</label>
+                            <input type="numero" id=numero placeholder=000>
                         </div>
                     </div>
-                        <div class="area-endereco formatacao">
-                            <div class="endereco-numero">
-                                <div class="endereco">
-                                    <label for="endereco">endereco</label>
-                                    <input type="endereco" id="endereco" placeholder="digite seu endereco">
-                                </div>
-                                <div class="numero">
-                                    <label for="numero">numero</label>
-                                    <input type="numero" id=numero placeholder=000>
-                                </div>
-                            </div>
-                            <div class="cidade-cep">
-                                <div class="cidade">
-                                    <label for="cidade">cidade</label>
-                                    <input type="text" id="cidade" placeholder="cidade">
-                                </div>
-                                <div class="cep">
-                                    <label for="cep">cep</label>
-                                    <input type="text" id="cep" placeholder="00000-000">
-                                </div>
-                            </div>
+                    <div class="cidade-cep">
+                        <div class="cidade titulo-campo">
+                            <label for="cidade">cidade</label>
+                            <input type="text" id="cidade" placeholder="cidade">
                         </div>
-                        <div class="area-dados formatacao">
-                            <div class="data-nacimento">
-                                <label for="data-nacimento">data-nacimento</label>
-                                <input type="date" id="data-nacimento" required>
-                            </div>
-                            <div class="genero">
-                                <label for="genero">genero</label>
-                                <select id="genero" required>
-                                    <option value="" disabled section>selecione seu genero</option>
-                                    <option value="#">feminino</option>
-                                    <option value="#">masculino</option>
-                                    <option value="#">outro</option>
-                                    <option value="#">prefiro nao responder</option>
-                                </select>
-                            </div>
+                        <div class="cep titulo-campo">
+                            <label for="cep">cep</label>
+                            <input type="text" id="cep" placeholder="00000-000">
                         </div>
+                    </div>
+                </div>
+                <div class="area-dados formatacao">
+                    <div class="data-nacimento titulo-campo">
+                        <label for="data-nacimento">data-nacimento</label>
+                        <input type="date" id="data-nacimento" required>
+                    </div>
+                    <div class="genero titulo-campo">
+                        <label for="genero">genero</label>
+                        <select id="genero" required>
+                            <option value="" disabled section>selecione seu genero</option>
+                            <option value="#">feminino</option>
+                            <option value="#">masculino</option>
+                            <option value="#">outro</option>
+                            <option value="#">prefiro nao responder</option>
+                        </select>
+                    </div>
+                </div>
 
-                        <div class="area-botao formatacao"> <button type="submit" id="botao-cadastrar">
-                                cadastrar
-                            </button>
-                            <a href="#" class="link-login">ja possui uma conta? Acesse agora!</a>
-                        </div>
-                </form>
-            </section>
+                <div class="area-botao formatacao">
+                    <button type="submit" id="botao-cadastrar">
+                        cadastrar</button>
+                    <a href="#" class="link-login">ja possui uma conta? Acesse agora!</a>
+                </div>
+            </form>
+        </section>
         </section>
     </main>
 

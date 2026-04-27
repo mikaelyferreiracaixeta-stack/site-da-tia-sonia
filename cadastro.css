@@ -7,7 +7,7 @@
 
 .area-cadastro {
     background-color: var(--cor-principal);
-    margin: 50px auto;
+    margin: 150px auto;
     width: 60vw;
     display: flex;
     flex-direction: column;
@@ -15,48 +15,42 @@
     gap: 20px;
 }
 
-.form-cadastro > div {
+.area-formulario>div {
     display: flex;
-    gap: 30px;
-    width: 50vw;
+    gap: 50px;
+
 }
 
-.area-formulario{
+.area-formulario {
     display: flex;
     justify-content: center;
     width: 60vw;
 }
 
-
-   { display: flex;
-    flex-direction: column;
-    flex: 1;
-
-}
-.ddd{
-    display: flex;
-    flex-direction: column;
-}
-
-#numero, #ddd{
-    width: 4vw;
-}
- 
-
-input, select{
+div {
     width: 100%;
-    padding: 7px  0;
+    display: flex;
+    gap: 1rem;
+}
+
+.area-endereco {
+    display: block;
+}
+
+input,
+select {
+    padding: 7px 0;
     margin-bottom: 8px;
 }
 
-.area-botao{
+.area-botao {
     margin-top: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-#botao-cadastrar{
+#botao-cadastrar {
     width: 50%;
     padding: 10px;
     border: none;
@@ -64,6 +58,67 @@ input, select{
     font-size: 1.1rem;
 }
 
-.link-login{
-margin-top: -25px;
+.titulo-campo {
+    display: flex;
+    flex-direction: column;
+}
+
+.formatacao {
+    gap: 1rem;
+
+}
+
+form {
+    width: 50vw;
+}
+
+.ddd,
+.numero {
+    width: 100px;
+}
+
+.cep {
+    width: 200px;
+}
+
+input,
+section {
+    border-radius: 7px;
+    padding: 10px;
+    border: none;
+    font-size: 1.1em;
+}
+
+@media(max-width:430px) {
+    .area-cadastro {
+        width: 100vw;
+        background: none;
+        margin: 8;
+        color: var(--cor-principal);
+    }
+
+    form {
+        width: 85vw;
+    }
+
+    .formatacao {
+    flex-direction: column;
+    }
+    .endereco-numero, .area-contato , .cidade-cep{
+        flex-direction: row;
+    }
+    input, select{
+        border: 2px solid var(--cor-principal);
+    }
+    .cep{
+        width: 30vw;
+    
+    }
+    #botao-cadastrar{
+        background-color: var(--cor-principal);
+        color: var(--cor-secundaria);
+    }
+    .link-login{
+        color: var(--cor-principal);
+    }
 }
