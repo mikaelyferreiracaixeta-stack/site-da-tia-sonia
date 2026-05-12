@@ -14,7 +14,9 @@
     padding: 0;
     font-family: 'Josefin Sans';
 }
-
+.acesso-negado{
+    background-color: red;
+}
 #home {
     scroll-margin-top: 110px;
 }
