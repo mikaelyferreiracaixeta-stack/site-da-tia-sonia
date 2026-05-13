@@ -88,7 +88,13 @@ section {
     border: none;
     font-size: 1.1em;
 }
-
+.erro-input{
+    border: 2px solid #ff4444 !important;
+    background-color: #ffe6e6;
+}
+.sucesso-input{
+    border:2px solid #00cc66 !important;
+}
 @media(max-width:430px) {
     .area-cadastro {
         width: 100vw;
