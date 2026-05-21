@@ -27,3 +27,4 @@ if (idadeUsuario1 >= 25) {
     alert("idade,ok bem-vindo," + idadeUsuario2 + "!")
     alert("Restricao de idade você NÃO pode ENTRAR!")
 }
+

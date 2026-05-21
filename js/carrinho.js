@@ -5,7 +5,7 @@ const botoesBordados = document.querySelectorAll('.btn-adicionar')
 let carrinho = JSON.parse(localStorage.getItem('itemCarrinho')) || []
 
 //Função para adicionar itens ao carrinho
-botoesAdicionar.forEach(function(botao){
+botoesBordados.forEach(function(botao){
     botao.addEventListener('click', function(){
 
         //Recebe dados do botão
