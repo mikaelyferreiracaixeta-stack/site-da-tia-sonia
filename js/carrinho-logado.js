@@ -77,7 +77,7 @@ if(!usuarioLogado){
         const emailTiaSonia = 'mikaelyferreiracaixeta@gmail.com'
         const assunto = 'Novo Pedido de ' + cliente.nome
 
-        const linkEmail = 'https://mail.google.com/mail/?view=cm&fs=1&to=${emailTiaSonia}&su=${encodeURIComponent(assunto)}&body=${encodeURIComponent(textoPedidoPorEmail)}'
+        const linkEmail = `https://mail.google.com/mail/?view=cm&fs=1&to=${emailTiaSonia}&su=${encodeURIComponent(assunto)}&body=${encodeURIComponent(textoPedidoPorEmail)}`
 
         window.open(linkEmail, '_blank')
 
