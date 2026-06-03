@@ -79,7 +79,7 @@ if(!usuarioLogado){
 
         const linkEmail = 'https://mail.google.com/mail/?view=cm&fs=1&to=${emailTiaSonia}&su=${encodeURIComponent(assunto)}&body=${encodeURIComponent(textoPedidoPorEmail)}'
 
-        window.open(linkEmail,'_blank')
+        window.open(linkEmail, '_blank')
 
         localStorage.removeItem('itemCarrinho')
 
